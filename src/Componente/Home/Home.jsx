@@ -28,7 +28,7 @@ const Home = () => {
         cssEase: "linear"
     };
     const OurClients = {
-        dots: true,
+        // dots: true,
         infinite: true,
         autoplay: true,
         speed: 500,
@@ -36,10 +36,19 @@ const Home = () => {
         slidesToScroll: 1,
         cssEase: "linear"
     };
+    const Company = {
+        // dots: true,
+        infinite: true,
+        autoplay: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        cssEase: "linear"
+    };
 
 
     return (
-        <div className="text-center bg-white">
+        <div className="text-center bg-white font-serif">
 
             {/* Hero part start  */}
             <div className="carousel w-full">
@@ -133,7 +142,7 @@ const Home = () => {
                         </div>
                         <div className="p-10">
                             <div className=" align-middle m-auto bg-white my-10 text-black">
-                                <img className="  " src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2018/12/staff-5.jpg" alt="" />
+                                <img className="  " src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/listing-1.jpg" alt="" />
                                 <div>
                                     <h1 className="text-3xl font-bold pt-3"> Studio in Compton</h1>
                                     <div className="grid grid-flow-col items-center">
@@ -150,10 +159,9 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-
                         <div className="p-10">
                             <div className=" align-middle m-auto bg-white  my-10 text-black">
-                                <img className="  " src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2018/12/staff-5.jpg" alt="" />
+                                <img className="  " src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash-min-min-760x510.jpg" alt="" />
                                 <div>
                                     <h1 className="text-3xl font-bold pt-3"> Studio in Compton</h1>
                                     <div className="grid grid-flow-col items-center">
@@ -170,10 +178,9 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-
                         <div className="p-10">
                             <div className=" align-middle m-auto bg-white  my-10 text-black">
-                                <img className="  " src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2018/12/staff-5.jpg" alt="" />
+                                <img className="  " src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/hausphotomedia-vvah86ql8iM-unsplash-min-min-760x510.jpg" alt="" />
                                 <div>
                                     <h1 className="text-3xl font-bold pt-3"> Studio in Compton</h1>
                                     <div className="grid grid-flow-col items-center">
@@ -190,23 +197,12 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-
                     </Slider>
                 </div>
             </div>
             {/* Discover our part end  */}
 
-
-
-
-
-
-
-
-
-
-
-
+            {/* ------------------------------------------------------------------------------------ */}
 
             {/* Explore Apartment part start  */}
             <div>
@@ -215,66 +211,52 @@ const Home = () => {
                     <p className="text-2xl">Explore all the different types of apartments so you can choose the best option for you  </p>
                 </div>
                 {/* view this apartment part start */}
-                <div className="w-3/4">
-                    <div className=" grid grid-flow-row grid-cols-2">
-                        <div className="">
-                            <div className="carousel-item card card-body min-h-sc relative">
-                                <img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/cat-4-1.jpg" alt="" />
-                            </div>
-                            <div className="hero-content text-start  absolute hero pt-10 text-black bg-white">
-                                <h1>Town home</h1>
-                                <h1>20 properties</h1>
-                            </div>
-                        </div>
-                        <div className="    ">
-                            <div className="carousel-item card card-body min-h-sc relative">
-                                <img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2019/01/apartament-4-1399x899.jpg" alt="" />
-                            </div>
-                            <div className="hero-content text-start  absolute hero pt-10 text-black bg-white">
-                                <h1>Town home</h1>
-                                <h1>20 properties</h1>
+                <div className=" ">
+                    <div className=" grid grid-flow-row grid-cols-2 gap-4">
+                        <div className=" ">
+                            <div className="card  bg-base-100 shadow-xl image-full">
+                                <figure><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/cat-4-1.jpg" alt="Shoes" /></figure>
+                                <div className="card-body">
+                                    <h2 className="card-title">Shoes!</h2>
+                                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                                </div>
                             </div>
                         </div>
-                        <div className="">
-                            <div className="carousel-item card card-body min-h-sc relative">
-                                <img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2019/01/apartament-4-1399x899.jpg" alt="" />
+                        <div className="     ">
+                            <div className="card  bg-base-100 shadow-xl image-full">
+                                <figure><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2019/11/01-1375x632.jpg" alt="Shoes" /></figure>
+                                <div className="card-body">
+                                    <h2 className="card-title">Shoes!</h2>
+                                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                                </div>
                             </div>
-                            <div className="hero-content text-start  absolute hero pt-10 text-black bg-white">
-                                <h1>Town home</h1>
-                                <h1>20 properties</h1>
+                        </div>
+                        <div className="  ">
+                            <div className="card   bg-base-100 shadow-xl image-full">
+                                <figure><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2019/11/15.jpg" alt="Shoes" /></figure>
+                                <div className="card-body">
+                                    <h2 className="card-title">Shoes!</h2>
+                                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                                </div>
                             </div>
                         </div>
                         <div className="">
-                            <div className="carousel-item card card-body min-h-sc relative">
-                                <img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/cat-4-1.jpg" alt="" />
-                            </div>
-                            <div className="hero-content text-start  absolute hero pt-10 text-black bg-white">
-                                <h1>Town home</h1>
-                                <h1>20 properties</h1>
+                            <div className="card bg-base-100 shadow-xl image-full">
+                                <figure><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2019/11/14.jpg" alt="Shoes" /></figure>
+                                <div className="card-body">
+                                    <h2 className="card-title">Shoes!</h2>
+                                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-3/12">
-
-                </div>
+                </div> 
                 {/* view this apartment part end */}
             </div>
 
             {/* Explore Apartment part end  */}
 
-
-
-
-
-
-
-
-
-
-
-
-
+            {/* ------------------------------------------------------------------------------------ */}
 
             {/* Properties Apartment Rent part Start  */}
 
@@ -305,7 +287,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="card card-compact bg-white text-black shadow-xl">
-                        <figure><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/alberto-castillo-q-mx4mSkK9zeo-unsplash-min-min-760x510.jpg" alt="Shoes" /></figure>
+                        <figure><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/hausphotomedia-vvah86ql8iM-unsplash-min-min-760x510.jpg" alt="Shoes" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Awesome Family Home </h2>
                             <div className="card-actions flex gap-10">
@@ -337,7 +319,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="card card-compact bg-white text-black shadow-xl">
-                        <figure><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/alberto-castillo-q-mx4mSkK9zeo-unsplash-min-min-760x510.jpg" alt="Shoes" /></figure>
+                        <figure><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/hausphotomedia-vvah86ql8iM-unsplash-min-min-760x510.jpg" alt="Shoes" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Awesome Family Home </h2>
                             <div className="card-actions flex gap-10">
@@ -369,7 +351,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="card card-compact bg-white text-black shadow-xl">
-                        <figure><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/alberto-castillo-q-mx4mSkK9zeo-unsplash-min-min-760x510.jpg" alt="Shoes" /></figure>
+                        <figure><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/hausphotomedia-vvah86ql8iM-unsplash-min-min-760x510.jpg" alt="Shoes" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Awesome Family Home </h2>
                             <div className="card-actions flex gap-10">
@@ -401,7 +383,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="card card-compact bg-white text-black shadow-xl">
-                        <figure><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/alberto-castillo-q-mx4mSkK9zeo-unsplash-min-min-760x510.jpg" alt="Shoes" /></figure>
+                        <figure><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/hausphotomedia-vvah86ql8iM-unsplash-min-min-760x510.jpg" alt="Shoes" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Awesome Family Home </h2>
                             <div className="card-actions flex gap-10">
@@ -432,9 +414,6 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
 
                 <div>
@@ -445,99 +424,88 @@ const Home = () => {
             {/* Properties Apartment Rent part end  */}
 
 
-
-
-
+            {/* ------------------------------------------------------------------------------------ */}
 
 
             {/* Real Estate from Rent part start  */}
-            <div>
-                <div>
-                    <div className="hero   text-black ">
-                        <div className="hero-content flex flex-1 flex-col lg:flex-row-reverse">
-                            <div className="text-center bg-indigo-700 lg:text-left">
-                                <h1 className="text-5xl font-bold">Why Choose Us</h1>
-                                <p className="py-6">It’s our job to get you the best price for your home and make sure that you get the best possible deal on the property </p>
-                                <div className="grid grid-flow-col gap-7">
-                                    <div className="  w-full bg-[url('https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/icon-1.png')]"> hi
-                                        <h1 className=" "></h1>
-                                    </div>
-                                    <div>
-                                        <h1>Wide Range of Properties</h1>
-                                        <p>With a robust selection of popular properties on hand,<br /> as well as leading properties from real estate experts.</p>
-                                    </div>
-                                </div>
-                                <div className="grid grid-flow-col gap-7 my-10">
-                                    <div className="  max-h-full bg-[url('https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/icon-1.png')]"> hi
-                                        <h1 className=" "></h1>
-                                    </div>
-                                    <div>
-                                        <h1>Wide Range of Properties</h1>
-                                        <p>With a robust selection of popular properties on hand,<br /> as well as leading properties from real estate experts.</p>
-                                    </div>
-                                </div>
-                                <div className="grid grid-flow-col gap-7 ">
-                                    <div className="  h-full bg-[url('https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/icon-1.png')]"> hi
-                                        <h1 className=" "></h1>
-                                    </div>
-                                    <div>
-                                        <h1>Wide Range of Properties</h1>
-                                        <p>With a robust selection of popular properties on hand,<br /> as well as leading properties from real estate experts.</p>
-                                    </div>
-                                </div>
+
+            <div className="hero   text-black ">
+                <div className=" py-10 flex  flex-col lg:flex-row-reverse">
+                    <div className="flex-1 pl-10 text-start ">
+                        <h1 className="text-4xl font-bold">Why Choose Us</h1>
+                        <p className="py-6">It’s our job to get you the best price for your home and make sure that you get the best possible deal on the property </p>
+                        <div className="grid grid-flow-col gap-7 text-start">
+                            <div className="  ">
+                                <img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/icon-1.png" alt="" />
                             </div>
-                            <div className=" flex-1 bg-slate-500 ">
-                                <div> REal Estate Inquiry form</div>
-                                <div className="card shrink-0     shadow-2xl  ">
-
-                                    <form className="card-body">
-                                        <div className="form-control">
-                                            <label className="label">
-                                                <span className="text-black">Inquiry  Type</span>
-                                            </label>
-                                            <input type="email" placeholder="email" className="input  " required />
-                                        </div>
-                                        <div className="form-control">
-                                            <label className="label">
-                                                <span className="text-black">Personal info</span>
-                                            </label>
-                                            <input type="email" placeholder="email" className="input  " required />
-                                        </div>
-                                        <div className="form-control">
-                                            <label className="label">
-                                                <span className="text-black">Email</span>
-                                            </label>
-                                            <input type="email" placeholder="email" className="input  " required />
-                                        </div>
-                                        <div className="form-control bg-sky-200">
-                                            <label className="label">
-                                                <span className="text-black">How to address you </span>
-                                            </label   >
-                                            <section className="bg">
-                                                <select name="" id="">Mr</select>
-                                                <select name="" id="">Mrs</select>
-                                            </section>
-
-
-                                            <input type="email" placeholder="email" className="input  " required />
-                                        </div>
-                                        <div className="form-control mt-6">
-                                            <button className="btn btn-primary">Login</button>
-                                        </div>
-                                    </form>
-                                </div>
+                            <div className=" ">
+                                <h1 className="text-3xl font-bold pb-5">Wide Range of Properties</h1>
+                                <p className="text-2xl  ">With a robust selection of popular properties on hand,  as well as leading properties from real estate experts.</p>
                             </div>
                         </div>
+                        <div className="grid grid-flow-col gap-7 my-10 text-start">
+                            <div className="  ">
+                                <img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/icon-1.png" alt="" />
+                            </div>
+                            <div className=" ">
+                                <h1 className="text-4xl font-bold pb-5">Wide Range of Properties</h1>
+                                <p className="text-2xl   ">With a robust selection of popular properties on hand,  as well as leading properties from real estate experts.</p>
+                            </div>
+                        </div>
+                        <div className="grid grid-flow-col gap-7 text-start">
+                            <div className="  ">
+                                <img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/icon-1.png" alt="" />
+                            </div>
+                            <div className=" ">
+                                <h1 className="text-4xl font-bold pb-5">Wide Range of Properties</h1>
+                                <p className="text-2xl   ">With a robust selection of popular properties on hand, as well as leading properties from real estate experts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="  flex-1 bg-[url(https://i.ibb.co/Nr9L7rb/Screenshot-2024-01-14-at-22-00-41-Home-Press-Real-Estate-Word-Press-Theme-for-Realtors.png)]  ">
+                        <div> REal Estate Inquiry form</div>
+                        <div className="items-center m-auto mt-16">
+                            <div className="card shrink-0 shadow-2xl bg-white m-auto w-3/5    ">
+                                <form className="card-body">
+                                    <div className="form-control">
+                                        <label className="label">
+                                            <span className="text-black">Your Name</span>
+                                        </label>
+                                        <input type="text" placeholder="Fuck You Name" className="input   text-white  " required />
+                                    </div>
+                                    <div className="form-control">
+                                        <label className="label">
+                                            <span className="text-black">Your Girls Friend Name </span>
+                                        </label>
+                                        <input type="email" placeholder="Fuck Your Girls Friend" className="input  text-white  " required />
+                                    </div>
+                                    <div className="form-control">
+                                        <label className="label">
+                                            <span className="text-black">Your Email</span>
+                                        </label>
+                                        <input type="email" placeholder="Email" className="input   text-white  " required />
+                                    </div>
+                                    <div className="form-control">
+                                        <label className="label">
+                                            <span className="text-black">Your Password</span>
+                                        </label>
+                                        <input type="password" placeholder="Password" className="input   text-white  " required />
+                                    </div>
+
+                                    <div className="form-control mt-6">
+                                        <button className="btn btn-primary">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
             {/* Real Estate from  Rent part end  */}
 
 
-
-
-
-
+            {/* ------------------------------------------------------------------------------------ */}
 
 
             {/* Meet Our Agent part start  */}
@@ -632,6 +600,7 @@ const Home = () => {
 
 
 
+            {/* ------------------------------------------------------------------------------------ */}
 
             {/* Our Clients Says part start  */}
             <div className="p-10 bg-white  text-black">
@@ -746,73 +715,29 @@ const Home = () => {
             </div>
             {/* Our Clients Says part end  */}
 
+            {/* ------------------------------------------------------------------------------------ */}
+            <div className="text-black py-10">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div className="text-black">
-                <h2>Auto Play</h2>
-                <Slider {...settings}>
+                <Slider {...Company}>
                     <div>
-                        <h3>1</h3>
+                        <h3><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/brand-2.png" alt="" /></h3>
                     </div>
                     <div>
-                        <h3>2</h3>
+                        <h3><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/brand-4.png" alt="" /></h3>
                     </div>
                     <div>
-                        <h3>3</h3>
+                        <h3><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/brand-1.png" alt="" /></h3>
                     </div>
                     <div>
-                        <h3>4</h3>
+                        <h3><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/brand-2.png" alt="" /></h3>
                     </div>
                     <div>
-                        <h3>5</h3>
+                        <h3><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/brand-4.png" alt="" /></h3>
                     </div>
                     <div>
-                        <h3>6</h3>
+                        <h3><img src="https://homepress.stylemixthemes.com/main/wp-content/uploads/sites/3/2021/03/brand-1.png" alt="" /></h3>
                     </div>
+
                 </Slider>
             </div>
 
